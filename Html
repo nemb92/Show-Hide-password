@@ -3,12 +3,84 @@
 </head>
 
 <body>
-    Pasword : <input type="password" name="password" id="password" />
+    <fieldset>
+        <label style="align-content:center">
+            Name : <br />
+            <input type="text" name="name" id="name" /><br />
+
+            UserName : <br />
+            <input type="text" name="user" id="user" /><br />
+
+            Email: <br />
+            <input type="email" name="email" id="email" placeholder="Enter your email" /><br />
+            Pasword : <br />
+            <input type="password" name="password" id="password" />
+            <button type="button" id="vidi" onclick="if(password.type=='text')password.type='password'; else password.type='text';">
+                Show/Hide
+            </button>
+              <br />
+            <br />
+            <button type="button" onclick="myFunction()">Submit</button>
+
+            <script>
+                function myFunction() {
+                    var x = "nathan@yesenia.net";
+
+                    x = document.getElementById("email").value;
 
 
-    <button type="button" id="vidi" onclick="if(password.type=='text')password.type='password'; else password.type='text';">
-        Show/Hide
-    </button>
+                    if (x == "nathan@yesenia.net") {
+                        alert("Your email is valid")
+                    } else if (x != "nathan@yesenia.net") {
+                        alert("Your email is invalid")
+                    }
+                    document.getElementById("email").innerHTML = validateEmail;
+                }
 
+
+            </script>
+
+                             
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <address>
+            Street : "Douglas Extension" <br />
+            Suite : "Suite 847"<br />
+            City : "McKenziehaven" <br />
+            Zipcode : "59590-4157" <br />
+            Phone : 1-463-123-4447 <br />
+            Website : ramiro.info <br />
+            Company : Romaguera-Jacobson <br />
+            Name : 
+       
+        
+        
+        </address>
+    </fieldset>
+    
 </body>
 </html>
+
+
+
+
+<!--"id": 3,
+  "name": "Clementine Bauch",
+  "username": "Samantha",
+  "email": "Nathan@yesenia.net",
+  "address": {
+    "street": "Douglas Extension",
+    "suite": "Suite 847",
+    "city": "McKenziehaven",
+    "zipcode": "59590-4157",
+    "geo": {
+      "lat": "-68.6102",
+      "lng": "-47.0653"
+    }
+  },
+  "phone": "1-463-123-4447",
+  "website": "ramiro.info",
+  "company": {
+    "name": "Romaguera-Jacobson",*/ -->
